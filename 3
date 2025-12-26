@@ -1,0 +1,17 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        String mealline = sc.nextLine();
+        int meal =Integer.parseInt(mealline);
+
+        String tipline=sc.nextLine();
+        int tip=tipline.isEmpty()?0:Integer.parseInt(tipline);
+
+        String taxline=sc.nextLine();
+        int tax=taxline.isEmpty()?0:Integer.parseInt(taxline);
+
+        double total=meal+meal*tax/100+meal*tip/100;
+
+        System.out.println(Math.round(total));
+   }}
