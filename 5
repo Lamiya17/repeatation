@@ -1,0 +1,21 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        String text = sc.nextLine();
+
+        for(int i=text.length()-1;i>=0;i--){
+            System.out.print(text.charAt(i));
+        }
+        System.out.println();
+
+        List<Character> chars=new ArrayList<>();
+        for(char c:text.toCharArray()){
+            chars.add(c);
+        }
+        Collections.shuffle(chars);
+        for(char c : chars){
+            System.out.print(c);
+        }
+
+   }}
